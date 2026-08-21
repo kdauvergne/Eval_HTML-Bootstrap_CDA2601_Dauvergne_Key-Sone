@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Student - Guide d'introduction au HTML/CSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Le guide d'introduction au HTML/CSS</h1>
+        <p>
+          Étudiants de Digital Student, bienvenue sur votre guide d'introduction
+          au HTML/CSS. À la fin de ce guide, vous aurez toutes les clés en main
+          pour créer votre premier site web HTML5 et CSS3.
+        </p>
+      </header>
+
+      <section>
+        <h2>Pourquoi apprendre HTML/CSS ?</h2>
+        <div class="container">
+          <div class="element">
+            <p>
+              <strong>Le HTML et le CSS sont la base de l'internet</strong> tel
+              que l'on le connait. Sans HTML et CSS, aucun site internet que tu
+              visites ne ressemblerait à ce que tu vois aujourd'hui.
+            </p>
+          </div>
+          <div class="element">
+            <p>
+              <strong>Complémentaires</strong>, HTML définit la structure, le
+              squelette de ton site, tandis que CSS magnifie tout cela grâce à
+              des styles.
+            </p>
+          </div>
+          <div class="element">
+            <p>
+              <strong>Une porte d'entrée obligatoire</strong>, si tu veux
+              progresser dans le web et devenir un développeur aguéri, maîtrises
+              d'abord tes fondamentaux !
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h2>Les balises de base</h2>
+          <p>
+            Il existe de nombreuses balises pour de nombreux usages en HTML. Il
+            est très important de choisir ses balises consciemment et d'avoir
+            une bonne structure sématique afin de favoriser l'accessibilité et
+            la navigation sur votre site et également le référencement.
+          </p>
+        </div>
+
+        <!-- Balises h1 à h6 -->
+        <div class="container balises">
+          <div class="element">
+            <div class="presentation">
+              <h4>
+                <pre><code>Les balises &lt;h1&gt; à &lt;h6&gt;</code></pre>
+              </h4>
+              <p>
+                Les balises h1 à h6 sont utilisées pour représenter les titres
+                de section. Sur 6 niveaux différents, les balisent correspondent
+                au niveaux différents niveaux de titrage souhaité, en commençant
+                par h1 le plus élevé et h6 le plus faible.
+              </p>
+            </div>
+            <br />
+
+            <div class="exemple">
+              <h4>Voici un exemple d'utilisation :</h4>
+              <p>&lt;h1&gt; Titre de niveau 1 &lt;h1&gt;</p>
+            </div>
+          </div>
+
+          <!-- Balises p -->
+
+          <div class="element">
+            <div>
+              <h4>
+                <pre><code>La balise &lt;p&gt; </code></pre>
+              </h4>
+              <p>
+                La balise &lt;p&gt; sert à définir un paragraphe. Ce bloc
+                structure le texte. Ce sont des éléments de niveau bloc et se
+                ferment automatiquement si un autre élément de niveau bloc est
+                analysé avant la balise de fermeture.
+              </p>
+            </div>
+            <br />
+            <div class="exemple">
+              <h4>Voici un exemple d'utilisation :</h4>
+              <p>
+                &lt;p&gt; Voici un bloc de texte de type paragraphe. &lt;p&gt;
+              </p>
+              <p>
+                &lt;p&gt; Ajouter plusieurs blocs de paragraphes permettent de
+                structurer un texte et faciliter l'accessibilité. &lt;p&gt;
+              </p>
+            </div>
+          </div>
+
+          <!-- Balise a -->
+
+          <div class="element">
+            <div>
+              <h4>
+                <pre><code>La balise &lt;a&gt; </code></pre>
+              </h4>
+              <p>
+                La balise &lt;a&gt; ou "ancre" créé un hyperlien vers des pages
+                web ou fichiers, adresses e-mail, emplacements dans la même page
+                ou toute autre ressource accessible par une URL. Elle est
+                toujours accompagnée de son attribut href.
+              </p>
+            </div>
+            <div>
+              <br />
+              <h4>Voici un exemple d'utilisation :</h4>
+              <p>
+                &lt;a href="https://mon-lien.com"&gt; Cliquez sur mon
+                lien&lt;a&gt;
+              </p>
+            </div>
+          </div>
+
+          <!-- Balise img -->
+
+          <div class="element">
+            <div>
+              <h4>
+                <pre><code>La balise &lt;img&gt; </code></pre>
+              </h4>
+              <p>
+                La balise &lt;img&gt; permet d'intégrer une image dans un
+                document. Elle est accompagnée d'un attribut src qui contient le
+                chemin vers l'image et l'attribut alt obligatoire qui contient
+                un texte de remplacement pour l'image, extrêment utile pour
+                l'accessibilité.
+              </p>
+            </div>
+            <br />
+
+            <div>
+              <h4>Voici un exemple d'utilisation :</h4>
+              <p>
+                &lt;img src="/chemin/assets/images/mon-image.jpg" alt="Mon
+                image">
+              </p>
+            </div>
+          </div>
+
+          <!-- Balise ul -->
+
+          <div class="element">
+            <div>
+              <h4>
+                <pre><code>La balise &lt;ul&gt; </code></pre>
+              </h4>
+              <p>
+                La balise &lt;ul&gt; permet de créer des listes non-ordonnées. A
+                l'intérieur on retrouve souvent la structure : <br />
+                &lt;ul&gt; <br />
+                &lt;li&gt; &lt;/li&gt; <br />
+                &lt;li&gt; &lt;/li&gt; <br />
+                &lt;/ul&gt;
+              </p>
+            </div>
+            <div>
+              <br />
+              <h4>Voici un exemple d'utilisation :</h4>
+              <p>
+                Liste : <br />
+                &lt;ul&gt; <br />
+                &lt;li&gt; Élément 1 &lt;/li&gt; <br />
+                &lt;li&gt; Élément 2 &lt;/li&gt; <br />
+                &lt;/ul&gt;
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-4">
+        <h2>5 Tips & Bonnes pratiques</h2>
+
+        <div>
+          <ul>
+            <li>Gardez une bonne structure sémantique</li>
+            <li>Organisez vos fichiers</li>
+            <li>Séparez le HTML du CSS</li>
+            <li>Vérifiez les ouvertures et fermetures de vos balises HTML</li>
+            <li>
+              Validez le code de vos pages sur
+              <a href="https://validator.w3.org">Validator W3C</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="section-5">
+        <h2>Vous avez une question ?</h2>
+        <form action="">
+          <ul>
+            <li>
+              <label for="prenom">Prénom</label>
+              <input type="text" name="prenom" placeholder="Votre prénom" />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="Votre email" />
+            </li>
+            <li>
+              <label for="msg">Message</label>
+              <textarea
+                id="msg"
+                name="message"
+                placeholder="Votre message"
+              ></textarea>
+            </li>
+            <li>
+              <label for="checkbox">S'abonner à la newsletter</label>
+
+              <input class="checkbox" type="checkbox" />
+            </li>
+          </ul>
+          <button type="submit">Envoyer</button>
+          <button type="reset">Effacer</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

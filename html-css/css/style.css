@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+  color: #333333;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  line-height: normal;
+  padding-bottom: 12px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Nunito Sans", sans-serif;
+  padding-bottom: 16px;
+}
+
+p,
+ul {
+  font-family: "Open Sans", sans-serwif;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  max-width: 80%;
+  margin: auto;
+  padding: 64px;
+}
+
+header {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+section {
+  margin-bottom: 24px;
+  margin-top: 24px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.element {
+  flex: 1 1 50px;
+  margin: 5px;
+}
+
+.container.balises {
+  padding-top: 10px;
+}
+.balises .element {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #2f3640;
+}
+
+input,
+textarea {
+  font-family: "Open Sans";
+  margin-top: 0.5rem;
+  padding: 0.8rem;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  width: 100%;
+}
+
+form > button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  border: none;
+  background-color: #e0e0e0;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3b82f6;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3b82f6;
+}
+
+.checkbox {
+  display: flex;
+  align-items: left;
+  width: auto;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  main {
+    max-width: 100%;
+    padding: 32px;
+  }
+}
